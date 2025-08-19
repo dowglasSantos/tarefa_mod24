@@ -13,4 +13,19 @@ public class ContractService{
         contractServiceDao.save();
         return "sucesso";
     }
+
+    public Boolean delete(String id) {
+        contractServiceDao.delete(id);
+        return true;
+    }
+
+    public Boolean toUpdate(Contract contract) {
+        contractServiceDao.toUpdate(contract);
+        return true;
+    }
+
+    public Boolean search(String id) {
+        contractServiceDao.search(id);
+        return true;
+    }
 }
